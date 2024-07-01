@@ -80,7 +80,7 @@ public class KafkaReporter extends AbstractService implements Reporter {
                     } else {
                         message = String.format("Message %s not written on topic=%s", record.value(), kafkaConfiguration.getKafkaTopic());
                     }
-                    LOGGER.info(message);
+                    LOGGER.debug(message);
                 }
             );
         }
